@@ -1,11 +1,12 @@
-//your JS code here. If required.
-const student ={
+const student = {
     name: "John",
+};
+
+function getKeys(obj) {
+    return Object.keys(obj);
 }
 
-function getKeys(obj){
-return Object.keys(obj)
-}
-console.log(getKeys(student))
+console.log(getKeys(student));
 
-export { student, getKeys };
+// Change export syntax
+module.exports = { student, getKeys };
