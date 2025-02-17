@@ -1,12 +1,10 @@
 const student = {
-    name: "John",
+    name: "Pranav",
+    age: 22
 };
 
 function getKeys(obj) {
-    return Object.keys(obj);
+    return student.name;
 }
 
-// console.log(getKeys(student));
-
-// Change export syntax
-// module.exports = { student, getKeys };
+console.log(getKeys(student)); // Output: ["name", "age"]
