@@ -6,7 +6,7 @@ function getKeys(obj) {
     return Object.keys(obj);
 }
 
-console.log(getKeys(student));
+// console.log(getKeys(student));
 
 // Change export syntax
-module.exports = { student, getKeys };
+// module.exports = { student, getKeys };
