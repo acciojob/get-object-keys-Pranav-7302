@@ -1,6 +1,5 @@
 const student = {
-    name: "Pranav",
-    age: 22
+    name: "John";
 };
 
 function getKeys(obj) {
