@@ -1,13 +1,13 @@
 const student = {
     name: "John",
     class: "7th",
-    age: 12
+    city: "baghpat"
 };
 
 function getKeys(obj) {
-     console.log(Object.keys(obj))
+     return Object.keys(obj);
 }
 
 // console.log(getKeys(student)); // Output: ["name", "age"]
 
-getKeys(student)
+console.log(getKeys(student)); // Output: ["name", "class", "age"]
