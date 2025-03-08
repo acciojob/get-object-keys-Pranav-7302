@@ -1,12 +1,11 @@
 const student = {
     name: "John",
-    class: "7th",
-    city: "baghpat"
+    age: 25
 };
 
-function getKeys(obj) {
-     const keys =  Object.keys(obj); // Already returns an array, spread operator unnecessary
-     return keys;
+
+function getKeys(obj){
+    return [...Object.keys(obj)];
 }
 
-console.log(getKeys(student)); // Output: ["name", "class", "city"]
+console.log(typeof getKeys(student)); // ✅ Output: ["name", "age"]
