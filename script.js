@@ -1,11 +1,14 @@
+// Create the student object
 const student = {
     name: "John",
-    age: 25
+    class: "7th",
+    city: "baghpat"
 };
 
 
-function getKeys(obj){
-    return [...Object.keys(obj)];
+function getKeys(obj) {
+     const keys =  Object.keys(obj); // Already returns an array, spread operator unnecessary
+     return keys;
 }
 
-console.log(typeof getKeys(student)); // ✅ Output: ["name", "age"]
+console.log(getKeys(student)); // Output: ["name", "class", "city"]
