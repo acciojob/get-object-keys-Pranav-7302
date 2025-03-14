@@ -1,14 +1,32 @@
 // Create the student object
 const student = {
-    name: "John",
-    class: "7th",
-    city: "baghpat"
+  name: "John"
 };
 
-
+// Function to get all keys from the object
 function getKeys(obj) {
-     const keys =  Object.keys(obj); // Already returns an array, spread operator unnecessary
-     return keys;
+  return Object.keys(obj);
 }
 
-console.log(getKeys(student)); // Output: ["name", "class", "city"]
+// Testing the function
+console.log(getKeys(student)); // Output: ["name"]
+
+// Do not change the code below
+window.getKeys = getKeys;
+window.student = student;
+// Create the student object
+const student = {
+  name: "John"
+};
+
+// Function to get all keys from the object
+function getKeys(obj) {
+  return Object.keys(obj);
+}
+
+// Testing the function
+console.log(getKeys(student)); // Output: ["name"]
+
+// Do not change the code below
+window.getKeys = getKeys;
+window.student = student;
